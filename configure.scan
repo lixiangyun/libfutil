@@ -2,17 +2,15 @@
 # Process this file with autoconf to produce a configure script.
 
 AC_PREREQ([2.69])
-AC_INIT(libfutil, 1.0, linimbus@126.com)
-AC_CONFIG_SRCDIR([src/futil_atomic.c])
-AC_CONFIG_HEADERS([include/futil_config.h])
-AM_INIT_AUTOMAKE
+AC_INIT([FULL-PACKAGE-NAME], [VERSION], [BUG-REPORT-ADDRESS])
+AC_CONFIG_SRCDIR([src/helloworld.c])
+AC_CONFIG_HEADERS([config.h])
 
 # Checks for programs.
 AC_PROG_CC
 
 # Checks for libraries.
-AC_CHECK_LIB([pthread], [pthread_rwlock_init])
-AC_PROG_RANLIB
+
 # Checks for header files.
 AC_CHECK_HEADERS([stdint.h stdlib.h string.h])
 

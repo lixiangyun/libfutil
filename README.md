@@ -1,2 +1,2 @@
-# ctelnet
-Automated command execution scripts telnet tools
+# libfutil
+High performance user space nolock algorithm library

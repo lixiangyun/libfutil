@@ -1,4 +1,4 @@
-bin_PROGRAMS=helloworld
-helloworld_SOURCES=helloworld.c
-helloworld_CPPFLAGS=-l ../include/
-helloworld_LDFLAGS=-D_GNU_SOURCE
+noinst_LIBRARIES=libfutil.a
+noinst_HEADERS=futil_typedef.h  futil_atomic.h futil_queue.h
+libfutil_a_SOURCES=futil_atomic.c futil_queue.c
+libfutil_a_CPPFLAGS=-l ../include/
