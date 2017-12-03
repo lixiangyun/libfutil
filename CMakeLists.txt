@@ -6,6 +6,8 @@ project (futil)
 set (VERSION_MAJOR 1)
 set (VERSION_MINOR 0)
 
+set(CMAKE_VERBOSE_MAKEFILE ON)
+
 # configure a header file to pass some of the CMake settings
 # to the source code
 configure_file (
@@ -18,4 +20,5 @@ configure_file (
 include_directories("${PROJECT_BINARY_DIR}")
 
 add_subdirectory(src)
+add_subdirectory(example)
 
